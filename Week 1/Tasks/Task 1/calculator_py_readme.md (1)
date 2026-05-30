@@ -1,0 +1,24 @@
+y = "c"
+
+while y == "c" or y == "C":
+    num1 = float(input("Please enter the first number: "))
+    M = input("Choose an operator (+, -, *, /): ")
+    num2 = float(input("Please enter the second number: "))
+
+    if M == "+":
+        print("The answer is:", num1 + num2)
+    elif M == "-":
+        print("The answer is:", num1 - num2)
+    elif M == "*":
+        print("The answer is:", num1 * num2)
+    elif M == "/":
+        if num2 != 0:
+            print("The answer is:", num1 / num2)
+        else:
+            print("Error: Cannot divide by zero.")
+    else:
+        print("Invalid operator.")
+
+    y = input("Press 'C' to calculate again, or 'X' to exit: ")
+
+print("Thank you. Goodbye")
